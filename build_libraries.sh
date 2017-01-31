@@ -126,8 +126,8 @@ function build_python() {
     /opt/cross/x86_64-linux-musl/bin/x86_64-linux-musl-strip python
 
     # Package the python libraries
-    pushd /build/${PYTHON_VERSION}/Lib
-    zip -r /build/python/${PYTHON_VERSION}.zip
+    pushd /build/Python-${PYTHON_VERSION}/Lib
+    zip -r /build/python/python-libs.zip
     popd
   }
 
