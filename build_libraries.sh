@@ -124,6 +124,11 @@ function build_python() {
     # Build
     make -j4
     /opt/cross/x86_64-linux-musl/bin/x86_64-linux-musl-strip python
+
+    # Package the python libraries
+    pushd /build/${PYTHON_VERSION}/Lib
+    zip -r /build/python/${PYTHON_VERSION}.zip
+    popd
   }
 
 function doit() {
