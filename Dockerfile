@@ -1,6 +1,8 @@
 FROM andrewd/musl-cross
 MAINTAINER Mike Tonks
 
+apt-get update && apt-get install -y zip && rm -rf /var/lib/apt/lists/*
+
 # Add our build script
 ADD . /build/
 

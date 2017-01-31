@@ -89,7 +89,7 @@ function build_python() {
 
     # Set up modules
     cp Modules/Setup.dist Modules/Setup
-    MODULES="_bisect _collections _csv _datetime _elementtree _functools _heapq _io _md5 _posixsubprocese _random _sha _sha256 _sha512 _socket _struct _weakref array binascii cmath cStringIO cPickle datetime fcntl future_builtins grp itertools math mmap operator parser readline resource select spwd strop syslog termios time unicodedata zlib"
+    MODULES="_bisect _collections _csv _ctypes _datetime _elementtree _functools _heapq _io _md5 _posixsubprocese _random _sha _sha256 _sha512 _socket _struct _weakref array binascii cmath cStringIO cPickle datetime fcntl future_builtins grp itertools math mmap operator parser pyexpat readline resource select spwd strop syslog termios time unicodedata zlib"
     for mod in $MODULES;
     do
         sed -i -e "s/^#${mod}/${mod}/" Modules/Setup
