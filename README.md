@@ -10,7 +10,7 @@ Build is fully automated via docker containers, making it easy to reproduce on a
 
 In the /example folder there is a basic build script and Makefile to build a simple go-python binary.
 
-'''
+```bash
 make build
 make run
-'''
+```
